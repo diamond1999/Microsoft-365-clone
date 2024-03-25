@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Microsoft 365</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <!-- Header -->
+    <header class="flex item-center bg-[#f0f0f0] justify-between h-[48px]">
+        <div class="flex">
+            <div class="menu bg-[#f0f0f0] hover:bg-[#464feb] w-[68px] h-[48px]">
+                <i class="fa-solid fa-bars px-6 py-4 hover:text-[#fff]"></i>
+            </div>
+
+            <div class="logo  p-3">
+                <span class="text-[#464feb] font-semibold">Microsoft 365</span>
+            </div>
+        </div>
+
+        <div
+            class="srch rounded-[6px] border h-[32px] w-[400px] relative flex items-center text-sm drop-shadow-sm mt-2">
+            <i class="fa-solid fa-magnifying-glass absolute left-3 text-gray-400 text-base text-xs"></i>
+            <input type="text" placeholder="Search" class="w-full h-full pl-8">
+        </div>
+
+        <div class=" flex justify-between item-center px-8">
+            <div class="emoji w-[48px] hover:bg-[#464feb]">
+                <i class="fa-regular fa-face-smile px-4 py-4 hover:text-[#fff]"></i>
+            </div>
+
+            <div class="outlook w-[48px] hover:bg-[#464feb]">
+                <i class="fa-regular fa-calendar-check px-4 py-4 hover:text-[#fff]"></i>
+            </div>
+
+            <div class="settings w-[48px] hover:bg-[#464feb]">
+                <i class="fa-solid fa-gear px-4 py-4 hover:text-[#fff]"></i>
+            </div>
+
+            <div class="help w-[48px] hover:bg-[#464feb]">
+                <i class="fa-solid fa-question px-4 py-4 hover:text-[#fff]"></i>
+            </div>
+
+            <div class="acct w-[48px] py-3 hover:bg-[#464feb]">
+                <span
+                    class="rounded-full border border-2 p-1 mx-1 align-center justify-center hover:text-[#fff]">AO</span>
+            </div>
+        </div>
+
+    </header>
+    <div class="main flex">
+        <div class="sidebar flex flex-col item-center w-[68px] bg-[#f0f0f0] min-h-screen">
+            <div class="home w-[68px] p-2 align-center cursor-pointer hover:bg-[#fff] border-s-2 border-[#464feb]">
+                <i class="fa-solid fa-house w-[20px] h-[20px] px-4 text-[#464feb]"></i>
+                <p class="text-[10px] px-3">Home</p>
+            </div>
+
+            <div class="create w-[68px] p-2 align-center cursor-pointer hover:bg-[#fff] hover:text-[#464feb]">
+                <i class="fa-solid fa-circle-plus h-[20px] px-4"></i>
+                <p class="text-[10px] text-[#000] px-2">Create</p>
+            </div>
+
+            <div class="content w-[68px]  align-center cursor-pointer hover:bg-[#fff] hover:text-[#464feb]">
+                <i class="fa-regular fa-folder h-[20px] py-4  px-6"></i>
+                <p class="text-[10px] text-[#000] px-1">My Content</p>
+            </div>
+
+            <div class="feed w-[68px]  align-center cursor-pointer hover:bg-[#fff] hover:text-[#464feb]">
+                <i class="fa-solid fa-file-lines w-[20px] h-[20px] py-4  px-6"></i>
+                <p class="text-[10px] text-[#000] px-5">Feed</p>
+            </div>
+
+            <div class="apps w-[68px] align-center cursor-pointer hover:bg-[#fff] hover:text-[#464feb]">
+                <i class="fa-solid fa-grip w-[20px] h-[20px] py-4  px-6"></i>
+                <p class="text-[10px] text-[#000] px-5">Apps</p>
+            </div>
+
+            <div class="outlook w-[68px] align-center cursor-pointer hover:bg-[#fff]">
+                <img class="w-[20px] h-[24px] mx-5 mt-3"
+                    src="https://cdn.mos.cms.futurecdn.net/UCtpsJTqeU8TXtoagtidrC.png" alt="">
+                <p class="text-[10px] text-[#000] my-1 mx-3">Outlook</p>
+            </div>
+
+            <div class="teams w-[68px] align-center cursor-pointer hover:bg-[#fff]">
+                <img class="w-[24px] h-[20px] mx-4 mt-3"
+                    src="https://logosmarcas.net/wp-content/uploads/2021/04/Microsoft-Teams-Logo.png" alt="">
+                <p class="text-[10px] text-[#000] my-1 mx-4">Teams</p>
+            </div>
+
+            <div class="word w-[68px] align-center cursor-pointer hover:bg-[#fff]">
+                <img class="w-[24px] h-[20px] mx-4 mt-3"
+                    src="https://logospng.org/wp-content/uploads/microsoft-word.png" alt="">
+                <p class="text-[10px] text-[#000] my-1 mx-4">Word</p>
+            </div>
+
+            <div class="excel w-[68px] align-center cursor-pointer hover:bg-[#fff]">
+                <img class="w-[24px] h-[20px] mx-4 mt-3"
+                    src="https://www.liblogo.com/img-logo/ex220m9d7-excel-logo-microsoft-office-365-excel-logo-free-icon-of-logos-microsoft.png"
+                    alt="">
+                <p class="text-[10px] text-[#000] my-1 mx-4">Excel</p>
+            </div>
+
+            <div class="powerpoint w-[68px] align-center cursor-pointer hover:bg-[#fff]">
+                <img class="w-[24px] h-[20px] mx-4 mt-3"
+                    src="https://static.cdnlogo.com/logos/m/73/microsoft-powerpoint.png" alt="">
+                <p class="text-[10px] text-[#000] my-1 mx-2">PowerPoint</p>
+            </div>
+
+        </div>
+        <div class="hero bg-gradient-to-t from-white to-[100%] to-transparent w-full">
+
+            <div class="flex justify-between p-14 item-center">
+                <h1 class="font-semibold text-[20px]">Welcome to Microsoft 365</h1>
+
+                <div class="">
+                    <select class="p-2 rounded-[6px]" name="text" id="">
+                        <option value="install">Install and more</option>
+                        <option value="install">Install microsoft 365 apps</option>
+                    </select>
+                </div>
+            </div>
+            <div class="get-started flex justify-between bg-[#fafafa] mx-14 rounded-[4px]">
+                <img class=""
+                    src="https://res.cdn.office.net/officehub/officestartresources/new-user-shelf/new-user-shelf-1-small.svg"
+                    alt="">
+
+                <div class="flex flex-col gap-10 w-[208px] h-[124px] pt-2">
+                    <div class="w-[117px] h-[36px] mx-10">
+                        <h2 class="text-[22px] text-[#242424] px-1">Get started</h2>
+                    </div>
+
+                    <div class="flex gap-1">
+                        <div class="rounded-[4px] border bg-[#464feb] hover:bg-[#364abc] w-[108px] h-[32px]">
+                            <button class="text-[12px] text-[#fff] font-semibold px-4 py-1">Create new</button>
+                        </div>
+
+                        <div
+                            class="rounded-[4px] border bg-[#fff] hover:bg-[#f5f5f5] w-[118px] h-[32px] border-[#242424]-500">
+                            <button class="text-[12px] text-[#242424] font-semibold px-4 py-1">Explore apps</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <img src="https://res.cdn.office.net/officehub/officestartresources/new-user-shelf/new-user-shelf-2-small.svg"
+                        alt="">
+                </div>
+
+            </div>
+
+            <div class="bg-gradient-to-t from-[#fdfdfd] to-[100%] to-transparent">
+                <div class="w-[109px] h-[32px] mx-14 mt-14">
+                    <h3 class="text-[16px] font-semibold">Recommended</h3>
+                </div>
+
+                <div class="boxes mx-14 mt-4 flex item-center gap-4">
+                    <div class="box rounded-[4px] border w-[368px] h-[296px]">
+                        <div class="flex item-center gap-2 p-1">
+                            <i class="fa-solid fa-pen w-[30px] h-[29px] p-3"></i>
+                            <div class="">
+                                <span class="text-[14px] text-[#242424]]">You edited this</span>
+                                <p class="text-[12px] text-[#616161]">4 Mar</p>
+                            </div>
+                        </div>
+
+                        <div class="flex flex-col gap-1 rounded-[4px] border m-1">
+                            <div class="flex gap-2">
+                                <img class="w-[24px] h-[24px] mx-1 mt-2"
+                                    src="https://flyclipart.com/thumb2/microsoft-powerpoint-icon-microsoft-powerpoint-189759.png"
+                                    alt="">
+                                <p class="text-[13px] mt-2 font-semibold">DevOps CEIO Departmental Meeting - Ajibola
+                                    5t...</p>
+                            </div>
+                            <div class="w-[350px]mx-1 p-1">
+
+                                <img class="pb-1 rounded-[4px]" src="img/roll.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="box rounded-[4px] border w-[368px] h-[296px]">
+                        <div class="flex item-center gap-2 p-1">
+
+                            <i class="fa-solid fa-pen w-[30px] h-[29px] p-3"></i>
+                            <div class="">
+                                <span class="text-[14px] text-[#242424] font-semibold">Modesta Ekeh (Zoracom - NG)
+                                    <span class="font-normal">+ 1 othe...</span>
+                                </span>
+                                <p class="text-[12px] text-[#616161]">4 Mar</p>
+                            </div>
+                        </div>
+
+                        <div class="flex flex-col gap-1 rounded-[4px] border m-1">
+                            <div class="flex gap-2">
+                                <img class="w-[24px] h-[24px] mx-1 mt-2"
+                                    src="https://5f342d4b00fe1f8e578e-82d37a50eeb20dae3090fa87f1f3eefa.ssl.cf3.rackcdn.com/60db0305e46bbc0015882827/EXCEL_BUTTON.png"
+                                    alt="">
+                                <p class="text-[14px] mt-2 font-semibold">ROS REPORT</p>
+                            </div>
+                            <div class="w-[350px]mx-1 p-1">
+                                <img class="pb-1 rounded-[4px]" src="img/sheet.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box rounded-[4px] border w-[368px] h-[296px]">
+                        <div class="flex item-center gap-2 p-1">
+                            <i class="fa-solid fa-pen w-[30px] h-[29px] p-3"></i>
+                            <div class="">
+                                <span class="text-[14px] text-[#242424]]">You edited this</span>
+                                <p class="text-[12px] text-[#616161]">12 Mar</p>
+                            </div>
+                        </div>
+
+                        <div class="flex flex-col gap-1 rounded-[4px] border m-1">
+                            <div class="flex gap-2">
+                                <img class="w-[24px] h-[24px] mx-1 mt-2"
+                                    src="https://flyclipart.com/thumb2/microsoft-powerpoint-icon-microsoft-powerpoint-189759.png"
+                                    alt="">
+                                <p class="text-[14px] mt-2 font-semibold">Weekly task report - Bonaventure 01-07-2023
+                                </p>
+                            </div>
+                            <div class="w-[350px]mx-1 p-1">
+                                <img class="pb-1 rounded-[4px]" src="img/rolll.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box rounded-[4px] border w-[368px] h-[296px]">
+                        <div class="flex item-center gap-2 p-1">
+                            <i class="fa-solid fa-pen w-[30px] h-[29px] p-3"></i>
+                            <div class="">
+                                <span class="text-[14px] text-[#242424]]">You recently opened this</span>
+                                <p class="text-[12px] text-[#616161]">4 Mar</p>
+                            </div>
+                        </div>
+
+                        <div class="flex flex-col gap-1 rounded-[4px] border m-1">
+                            <div class="flex gap-2">
+                                <img class="w-[24px] h-[24px] mx-1 mt-2"
+                                    src="https://flyclipart.com/thumb2/microsoft-powerpoint-icon-microsoft-powerpoint-189759.png"
+                                    alt="">
+                                <p class="text-[14px] mt-2">Departmental Meeting Presentation Format</p>
+                            </div>
+                            <div class="w-[350px]mx-1 p-1">
+                                <img class="pb-1 rounded-[4px]" src="img/miro.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+            </div>
+
+            <div class="mx-14 mt-14">
+                <h3 class="font-semibold text-[16px]">Quick access</h3>
+            </div>
+
+            <div class="flex justify-between mx-14 pt-6">
+                <div class=" flex items-center gap-4">
+                    <div
+                        class="flex items-center bg-[#000] w-[66px] h-[34px] rounded-full border p-3 justify-between cursor-pointer">
+                        <i class="fa-solid fa-layer-group rotate-90 text-[#fff]"></i>
+                        <p class="text-[#fff] text-[14px]">All</p>
+                    </div>
+
+                    <div
+                        class="flex items-center bg-[#f0f0f0] hover:bg-[#f8f8f8] w-[155px] h-[34px] rounded-full border p-3 justify-between cursor-pointer">
+                        <i class="fa-regular fa-clock"></i>
+                        <p class="text-[14px]">Recently opened</p>
+                    </div>
+
+                    <div
+                        class="flex items-center bg-[#f0f0f0] hover:bg-[#f8f8f8] w-[94px] h-[34px] rounded-full border gap-2 p-2 cursor-pointer">
+                        <i class="fa-solid fa-user-group"></i>
+                        <p class="text-[14px]">Shared</p>
+                    </div>
+
+                    <div
+                        class="flex items-center bg-[#f0f0f0] hover:bg-[#f8f8f8] w-[114px] h-[34px] rounded-full border gap-2 p-2 cursor-pointer">
+                        <i class="fa-regular fa-star"></i>
+                        <p class="text-[14px]">Favorites</p>
+                    </div>
+
+                    <div class="w-[32px] h-[32px] p-1 px-2 rounded-full hover:bg-[#f0f0f0] cursor-pointer">
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                </div>
+
+                <div class="flex items-center gap-4">
+                    <div class="flex items-center gap-2 hover:text-[#464feb] cursor-pointer">
+                        <i class="fa-solid fa-upload"></i>
+                        <p>Upload</p>
+                    </div>
+
+                    <div class="w-[3px] h-[30px] bg-gray-300"></div>
+
+                    <div class="cursor-pointer">
+                        <i class="fa-solid fa-bars text-[#464feb]"></i>
+                    </div>
+
+                    <div class="cursor-pointer">
+                        <i class="fa-solid fa-grip"></i>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="mx-14 mt-6 border rounded-[6px] shadow ">
+                <div class=" flex justify-between p-2 hover:bg-[#f0f0f0] cursor-pointer">
+                    <div class="flex">
+                        <img class="w-[32px] h-[32px]"
+                            src="https://flyclipart.com/thumb2/microsoft-powerpoint-icon-microsoft-powerpoint-189759.png"
+                            alt="">
+                        <p class="p-1">DevOps CEIO Departmental Meeting - Ajibola 5th March, 2024</p>
+                    </div>
+
+                    <div class="">
+                        <p>Tue at 12:23</p>
+                    </div>
+
+                    <div class="flex items-center gap-4 mx-8">
+                        <i class="fa-solid fa-pen text-[#464feb]"></i>
+                        <p>You edited this</p>
+                    </div>
+
+                </div>
+
+                <div class="border-t"></div>
+
+                <div class=" flex justify-between p-2 hover:bg-[#f0f0f0] cursor-pointer">
+                    <div class="flex">
+                        <img class="w-[32px] h-[32px]"
+                            src="https://flyclipart.com/thumb2/microsoft-powerpoint-icon-microsoft-powerpoint-189759.png"
+                            alt="">
+                        <p class="p-1">DevOps CEIO Departmental Meeting - Ajibola 5th March, 2024</p>
+                    </div>
+
+                    <div class="">
+                        <p>Tue at 12:23</p>
+                    </div>
+
+                    <div class="flex items-center gap-4 mx-8">
+                        <i class="fa-solid fa-pen text-[#464feb]"></i>
+                        <p>You edited this</p>
+                    </div>
+
+                </div>
+
+                <div class="border-t"></div>
+
+                <div class=" flex justify-between p-2 hover:bg-[#f0f0f0] cursor-pointer">
+                    <div class="flex">
+                        <img class="w-[32px] h-[32px]"
+                            src="https://flyclipart.com/thumb2/microsoft-powerpoint-icon-microsoft-powerpoint-189759.png"
+                            alt="">
+                        <p class="p-1">DevOps CEIO Departmental Meeting - Ajibola 5th March, 2024</p>
+                    </div>
+
+                    <div class="">
+                        <p>Tue at 12:23</p>
+                    </div>
+
+                    <div class="flex items-center gap-4 mx-8">
+                        <i class="fa-solid fa-pen text-[#464feb]"></i>
+                        <p>You edited this</p>
+                    </div>
+
+                </div>
+                <div class="border-t"></div>
+
+                <div class=" flex justify-between p-2 hover:bg-[#f0f0f0] cursor-pointer">
+                    <div class="flex">
+                        <img class="w-[32px] h-[32px]"
+                            src="https://flyclipart.com/thumb2/microsoft-powerpoint-icon-microsoft-powerpoint-189759.png"
+                            alt="">
+                        <p class="p-1">DevOps CEIO Departmental Meeting - Ajibola 5th March, 2024</p>
+                    </div>
+
+                    <div class="">
+                        <p>Tue at 12:23</p>
+                    </div>
+
+                    <div class="flex items-center gap-4 mx-8">
+                        <i class="fa-solid fa-pen text-[#464feb]"></i>
+                        <p>You edited this</p>
+                    </div>
+
+                </div>
+                <div class="border-t"></div>
+
+                <div class=" flex justify-between p-2 hover:bg-[#f0f0f0] cursor-pointer">
+                    <div class="flex">
+                        <img class="w-[32px] h-[32px]"
+                            src="https://flyclipart.com/thumb2/microsoft-powerpoint-icon-microsoft-powerpoint-189759.png"
+                            alt="">
+                        <p class="p-1">DevOps CEIO Departmental Meeting - Ajibola 5th March, 2024</p>
+                    </div>
+
+                    <div class="">
+                        <p>Tue at 12:23</p>
+                    </div>
+
+                    <div class="flex items-center gap-4 mx-8">
+                        <i class="fa-solid fa-pen text-[#464feb]"></i>
+                        <p>You edited this</p>
+                    </div>
+
+                </div>
+                <div class="border-t"></div>
+
+                <div class=" flex justify-between p-2 hover:bg-[#f0f0f0] cursor-pointer">
+                    <div class="flex">
+                        <img class="w-[32px] h-[32px]"
+                            src="https://flyclipart.com/thumb2/microsoft-powerpoint-icon-microsoft-powerpoint-189759.png"
+                            alt="">
+                        <p class="p-1">DevOps CEIO Departmental Meeting - Ajibola 5th March, 2024</p>
+                    </div>
+
+                    <div class="">
+                        <p>Tue at 12:23</p>
+                    </div>
+
+                    <div class="flex items-center gap-4 mx-8">
+                        <i class="fa-solid fa-pen text-[#464feb]"></i>
+                        <p>You edited this</p>
+                    </div>
+
+                </div>
+                <div class="border-t"></div>
+
+                <div class=" flex justify-between p-2 hover:bg-[#f0f0f0] cursor-pointer">
+                    <div class="flex">
+                        <img class="w-[32px] h-[32px]"
+                            src="https://flyclipart.com/thumb2/microsoft-powerpoint-icon-microsoft-powerpoint-189759.png"
+                            alt="">
+                        <p class="p-1">DevOps CEIO Departmental Meeting - Ajibola 5th March, 2024</p>
+                    </div>
+
+                    <div class="">
+                        <p>Tue at 12:23</p>
+                    </div>
+
+                    <div class="flex items-center gap-4 mx-8">
+                        <i class="fa-solid fa-pen text-[#464feb]"></i>
+                        <p>You edited this</p>
+                    </div>
+
+                </div>
+                <div class="border-t"></div>
+
+                <div class=" flex justify-between p-2 hover:bg-[#f0f0f0] cursor-pointer">
+                    <div class="flex">
+                        <img class="w-[32px] h-[32px]"
+                            src="https://flyclipart.com/thumb2/microsoft-powerpoint-icon-microsoft-powerpoint-189759.png"
+                            alt="">
+                        <p class="p-1">DevOps CEIO Departmental Meeting - Ajibola 5th March, 2024</p>
+                    </div>
+
+                    <div class="">
+                        <p>Tue at 12:23</p>
+                    </div>
+
+                    <div class="flex items-center gap-4 mx-8">
+                        <i class="fa-solid fa-pen text-[#464feb]"></i>
+                        <p>You edited this</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="flex  bg-red-600 mx-14 justify-between items-center gap-2 ">
+                <a href="#">See all My Content</a>
+                <i class="fa-solid fa-arrow-right"></i>
+            </div>
+
+        </div>
+    </div>
+
+    </div>
+
+
+</body>
+
+</html>
